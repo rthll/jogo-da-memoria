@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    background-color: #272527;
+}
+
+h1 {
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.carta {
+    width: 100px;
+    height: 100px;
+    background-color: #d90ecf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.carta.virada {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.reiniciar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.visualizar {
+    margin-top: 30px;
+}
+
+.carta.pareado-A { background-color: #ff0000; } 
+.carta.pareado-B { background-color: #00ff00; } 
+.carta.pareado-C { background-color: #ff7300; }
+.carta.pareado-D { background-color: #0000ff; } 
+.carta.pareado-E { background-color: #fffb00; } 
+.carta.pareado-F { background-color: #d400ff; } 
+.carta.pareado-G { background-color: #ff009d; } 
+.carta.pareado-H { background-color: #00d9ff; } 
+.carta.pareado-I { background-color: #00ff9d; } 
+.carta.pareado-J { background-color: #ffffff; } 
+.carta.pareado-K { background-color: #4e4e4e; } 
+
+#contadorVisualizacoes {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #f0f0f0;
+}
+
+
